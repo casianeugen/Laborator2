@@ -18,7 +18,6 @@ public class BNMGet {
         try (CSVReader csvReader = new CSVReader(new FileReader("exchange.csv"))) {
             XSSFWorkbook workbook = new XSSFWorkbook();
             String[]  values;
-            System.out.println("Output from Server .... \n");
             XStream xstream = new XStream();
             xstream.processAnnotations(Valute.class);
             xstream.processAnnotations(ValCurs.class);
